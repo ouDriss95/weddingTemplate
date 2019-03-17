@@ -10,84 +10,144 @@
 	<meta name="keywords" content="Personal, Portfolio, Creative">
 	<meta name="description" content="Wedding Template">
 	<meta name="author" content="Driss OUDMINE">
-	
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Great+Vibes" rel="stylesheet">
 
 	<!-- Ionicons -->
 	<link rel="stylesheet" href="fonts/ionicons.min.css">
-	
+
 	<!-- Bootstrap CSS File -->
 	<link href="css/vendors/bootstrap.min.css" rel="stylesheet">
-	
+
 	<!-- Libraries CSS Files -->
 	<link rel="stylesheet" href="">
-	
+
 	<!--Site Main Style css-->
 	<link rel="stylesheet" href="css/style.css">
-	
+
 </head>
 
 <body>
-	<!-- Start Hero -->
-	<header class="align-self-center" id="hero">
-		<!-- Start navBar -->
+	<!-- Start Header -->
+
+	<header>
 		<nav class="navbar navbar-light navbar-expand-md fixed-top headroom">
 			<div class="container">
 				<!-- Logo -->
 				<a class="navbar-brand" href="#">
 					<img class="img-fluid" src="img/wedding.png">
 				</a>
-				
+
 				<button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navcol-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				
+
 				<div class="collapse navbar-collapse" id="navcol-1">
 					<ul class="nav navbar-nav ml-auto">
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">HOME</a></li>
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">COUPLE</a></li>
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">STORY</a></li>
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">EVENTS</a></li>
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">PEOPLE</a></li>
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">GALLERY</a></li>
-						<li class="nav-item" role="presentation"><a class="nav-link" href="#">RSVP</a></li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">HOME</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">COUPLE</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">STORY</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">EVENTS</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">PEOPLE</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">GALLERY</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" href="#">RSVP</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<!-- End navBar -->
-		
-		<!-- Start Slider -->
-		<div class="row align-items-center">
-			<div class="col-12">
-				<div class="container d-flex flex-column align-items-center">
-					<h1>We are getting Merried</h1>
-					<div class="slider-text-holder">
-						<h2 class="text-center">Michael &amp; Jessica</h2>
-						<p class="text-center">22 Jun. 2019</p>
-					</div>
-					<!-- CountDown -->
-					<div class="counter">
-						<div class="d-flex" id="countdown"></div>
-					</div>
-					
-					<!-- Bounce Arrow -->
-					<div class="arrow bounce">
-						<a href="#"><i class="icon ion-ios-arrow-down"></i></a>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start Slider -->
+	<section class="d-flex flex-column justify-content-center" id="slider">
+		<div class="container">
+			<div class="d-flex flex-column align-items-center banner-caption">
+				<h1>We are getting Merried</h1>
+				<h2>Michael &amp; Jessica</h2>
+				<p>22 Jun. 2019</p>
+			</div>
+
+			<!-- Counter -->
+			<div class="d-flex justify-content-center counter">
+				<div class="d-flex" id="countdown"></div>
+			</div>
+
+			<!-- Bounce Arrow -->
+			<div class="d-flex justify-content-center arrow bounce">
+				<a href="#couple"><i class="icon ion-ios-arrow-down"></i></a>
+			</div>
+		</div>
+	</section>
+	<!-- End Slider -->
+
+	<!-- Start Couple Section -->
+	<section id="couple">
+		<div class="container">
+			<!-- Main Heading -->
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center heading">
+						<h2>Lovely Couple</h2>
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-6 d-flex justify-content-center">
+					<figure class="figure jessica"><img class="figure-img" src="img/Jessica.png">
+						<figcaption class="figure-caption">
+							<h3><span>Jessica</span> | Singer</h3>
+							<p>"There is only one happiness in this life, to love and be loved."</p>
+							<ul>
+								<li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+								<li><a href="#"><i class="icon ion-logo-pinterest"></i></a></li>
+								<li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+							</ul>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div class="col-md-6 d-flex justify-content-center">
+					<figure class="figure michael"><img class="figure-img" src="img/Michael.png">
+						<figcaption class="figure-caption">
+							<h3><span>Michael</span> | Designer</h3>
+							<p> "Love isn't something you find. Love is
+								something that finds you."
+							</p>
+							<ul>
+								<li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+								<li><a href="#"><i class="icon ion-logo-pinterest"></i></a></li>
+								<li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+							</ul>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
 		</div>
-		<!-- End Slider -->
-	</header>
-	<!-- End Hero -->
+	</section>
+	<!-- End Couple Section -->
 
 
-	
-	
-	
+
+
+
+
 	<!--Jquery js-->
 	<script src="js/vendors/jquery.min.js"></script>
 	<!--Popper js-->
@@ -98,8 +158,8 @@
 	<script src="js/vendors/countdown.js"></script>
 	<!--Headroom js-->
 	<script src="js/vendors/headroom.js"></script>
-	
-	
+
+
 	<!--Site Main js-->
 	<script src="js/app.js"></script>
 </body>

@@ -1,17 +1,6 @@
 $(document).ready(function () {
 	'use strict';
 
-	/* COUNTDOWN TIMER 
-	-----------------------------------------------------------------------------------*/
-	$('#countdown').countdown('2019/06/22', function (event) {
-		var $this = $(this).html(event.strftime(''
-			+'<div><span>%D</span><span>days</span></div>'
-			+'<div><span>%H</span><span>hours</span></div>'
-			+'<div><span>%M</span><span>min</span></div>'
-			+'<div><span>%S</span><span>sec</span></div>'
-		))
-	});
-	
 	/* Headroom plugin for smart navBar
 	-----------------------------------------------------------------------------------*/
 
@@ -31,6 +20,19 @@ $(document).ready(function () {
 			$("nav").css("background-color", "transparent");
 		}
 	});
+
+	/* COUNTDOWN TIMER 
+	-----------------------------------------------------------------------------------*/
+	$('#countdown').countdown('2019/06/22', function (event) {
+		var $this = $(this).html(event.strftime(''
+			+'<div><span>%D</span><span>days</span></div>'
+			+'<div><span>%H</span><span>hours</span></div>'
+			+'<div><span>%M</span><span>min</span></div>'
+			+'<div><span>%S</span><span>sec</span></div>'
+		))
+	});
+	
+	
 
 
 });
