@@ -2,7 +2,7 @@
 body {
 	font-family: Dosis, sans-serif;
 	height: 6000px;
-	scroll-behavior: smooth;
+	color: #313F4C;
 }
 
 ul,
@@ -19,6 +19,7 @@ li {
 	position: relative;
 	margin-bottom: 70px;
 	width: 250px;
+	color: #000;
 }
 
 .heading h2:after {
@@ -30,6 +31,11 @@ li {
 	background-color: #FCD0D7;
 	height: 1.8px;
 	transform: translateX(-50%);
+}
+
+.btn:focus,
+.btn-primary:focus {
+	box-shadow: none !important;
 }
 
 /*============ HEADER ============*/
@@ -289,7 +295,7 @@ header .navbar-nav .nav-link:after {
 }
 
 #couple .figure .figure-caption li i:hover {
-	color: #FCD0D7;
+	color: #F8ADB9;
 }
 
 @media (min-width: 992px) {
@@ -324,7 +330,7 @@ header .navbar-nav .nav-link:after {
 	bottom: 0;
 	width: 2px;
 	margin-left: -1px;
-	background-color: #ADB5C2;
+	background-color: #F8ADB9;
 }
 
 #story .timeline .timeline-item {
@@ -344,7 +350,7 @@ header .navbar-nav .nav-link:after {
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
-	border: 2px solid #ADB5C2;
+	border: 2px solid #F8ADB9;
 	background-color: #fff;
 }
 
@@ -389,4 +395,155 @@ header .navbar-nav .nav-link:after {
 	#story .timeline .timeline-item:nth-child(even)::before {
 		left: 1px;
 	}
+}
+
+/*============ EVENTS SECTION ============*/
+#events {
+	padding-top: 130px;
+	margin: 0 20px;
+}
+
+#events .events-content {
+	padding-left: 0;
+	border: 1px solid #f5f6f7;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+#events .events-content .events-img {
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 400px !important;
+}
+
+#events .events-content .events-text {
+	padding: 80px 0 !important;
+}
+
+#events .events-content .events-text p i {
+	font-size: 18px;
+	color: #FCD0D7;
+}
+
+#events .events-text .btn {
+	font-size: 11px;
+	font-weight: 700;
+	padding: 8px 26px 6px;
+	letter-spacing: 1.7px;
+	text-transform: uppercase;
+	outline: none;
+	-webkit-transition: 0.15s linear;
+	transition: 0.15s linear;
+}
+
+#events .events-text .btn-round {
+	border-radius: 160px;
+}
+
+#events .events-text .btn-primary {
+	color: #313F4C;
+	background-color: #FCD0D7;
+	border-color: #FCD0D7;
+}
+
+#events .events-text .btn-primary:hover {
+	background-color: #F8ADB9;
+	border-color: #F8ADB9;
+}
+
+/*============ PEOPLE SECTION ============*/
+#people {
+	padding-top: 130px;
+}
+
+#people #pple-filters {
+	padding: 0;
+	margin: 25px 0 50px 0;
+	list-style: none;
+	text-align: center;
+}
+
+#people #pple-filters .left-round {
+	border-radius: 40px 0 0 40px;
+}
+
+#people #pple-filters .right-round {
+	border-radius: 0 40px 40px 0;
+}
+
+#people #pple-filters .btn-primary {
+	color: #fff;
+	background-color: #ADB5C2;
+	border-color: #fbfbfb;
+	padding: 6px 25px;
+}
+
+#people #pple-filters .btn-primary:hover,
+#people #pple-filters button.filter-active  {
+	background-color: #818EA2;
+}
+
+#people .pple-wrap {
+	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+	transition: 0.3s;
+}
+
+#people .pple-wrap:hover {
+	box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.26);
+}
+
+#people .pple-item {
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+#people .pple-item figure {
+	position: relative;
+	background: #313F4C;
+	overflow: hidden;
+	height: 276px;
+	border-radius: 4px 4px 0 0;
+	margin: 0;
+}
+
+#people .pple-item figure:hover img {
+	opacity: 0.4;
+	transition: 0.3s;
+}
+
+#people .pple-item figure .img-fluid {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#people .pple-item figure .link-preview {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 90%);
+	color: #fff;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+	backface-visibility: hidden;
+}
+
+#people .pple-item figure:hover .link-preview {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, -50%);
+}
+
+#people .pple-item figure .link-preview i {
+	font-size: 34px;
+	transition: .3s ease-in;
+}
+
+#people .pple-item figure .link-preview i:hover {
+	color: #F8ADB9;
 }
